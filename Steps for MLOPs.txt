@@ -18,6 +18,9 @@
 
 6. write code in params.yaml file & push updates on github
 
-7. create a python file in src directory named get_data.py where (read data, process & return dataframe) are the tasks
+7. create a python file in src directory named get_data.py & write code for reading data, process & then return it as dataframe. In this we will load the data using
+params.yaml & return it to the system after loading in a dataframe format.
 
-8. 
+8. create a python file in src directory named load_data.py & write code for reading data from data source, process & then save the new csv file as a dataframe.
+
+9. mention this load_data.py as a stage in dvc.yaml file.
