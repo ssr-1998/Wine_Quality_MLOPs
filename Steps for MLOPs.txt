@@ -11,4 +11,4 @@
 	5.2. dvc init
 	5.3. dvc add data_given/winequality.csv
 	5.4. git add .
-
+	5.5. git commit -m "first commit"
