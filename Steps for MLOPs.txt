@@ -1,0 +1,14 @@
+1. Create env
+
+2. activate env
+
+3. create requirements.txt & install it. {dvc, dvc[gdrive], sklearn} modules should be there.
+
+4. create a template.py file using "python > template.py" in terminal. Use template.py file to make necessary files & directories in main directory.
+
+5. run following from terminal:
+	5.1. git init
+	5.2. dvc init
+	5.3. dvc add data_given/winequality.csv
+	5.4. git add .
+
