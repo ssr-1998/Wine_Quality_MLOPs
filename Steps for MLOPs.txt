@@ -18,6 +18,6 @@
 
 6. write code in params.yaml file & push updates on github
 
-7. write stages in dvc.yaml file & push updates on github
+7. create a python file in src directory named get_data.py where (read data, process & return dataframe) are the tasks
 
-
+8. 
