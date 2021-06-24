@@ -19,14 +19,39 @@ Download the data from
 
 https://drive.google.com/drive/folders/18zqQiCJVgF7uzXgfbIJ-04zgz1ItNfF5?usp=sharing
 
+```bash
 git init
+```
 
+```bash
 dvc init
+```
 
+```bash
 dvc add data_given/winequality.csv
+```
 
+```bash
 git add .
+```
 
+```bash
 git commit -m "first commit"
+```
 
+One Liner Updates for README.md
+```bash
+git add . && git commit -m "Update README.md"
+```
 
+```bash
+git branch -M main
+```
+
+```bash
+git remote add origin  https://github.com/ssr-1998/Wine_Quality_MLOPs.git
+```
+
+```bash
+git push origin main
+```
