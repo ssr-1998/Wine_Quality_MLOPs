@@ -16,3 +16,8 @@
 	5.7. git remote add origin  https://github.com/ssr-1998/Wine_Quality_MLOPs.git
 	5.8. git push origin main
 
+6. write code in params.yaml file & push updates on github
+
+7. write stages in dvc.yaml file & push updates on github
+
+
