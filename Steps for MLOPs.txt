@@ -28,4 +28,5 @@ In end, push updates on github
 9. create a python file in src directory named split_data.py & write code for Spliting the Raw Data into [TRAIN & TEST] & then save the new csv files as a dataframe.
 Mention this split_data.py as a stage in dvc.yaml file & run "dvc repro" in terminal. In end, push updates on github
 
-10. 
+10. create a python file in src directory named train_and_evaluate.py & write code for training model on train & test. Also write code for model evaluation.
+Mention this train_and_evaluate.py as a stage in dvc.yaml file & run "dvc repro" in terminal. In end, push updates on github
