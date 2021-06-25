@@ -30,3 +30,5 @@ Mention this split_data.py as a stage in dvc.yaml file & run "dvc repro" in term
 
 10. create a python file in src directory named train_and_evaluate.py & write code for training model on train & test. Also write code for model evaluation.
 Mention this train_and_evaluate.py as a stage in dvc.yaml file & run "dvc repro" in terminal. In end, push updates on github
+
+11. create a report directory in main directory and create 2 json files with name storing params.json & score.json files.
