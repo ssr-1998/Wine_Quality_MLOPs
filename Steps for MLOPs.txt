@@ -29,6 +29,15 @@ In end, push updates on github
 Mention this split_data.py as a stage in dvc.yaml file & run "dvc repro" in terminal. In end, push updates on github
 
 10. create a python file in src directory named train_and_evaluate.py & write code for training model on train & test. Also write code for model evaluation.
-Mention this train_and_evaluate.py as a stage in dvc.yaml file & run "dvc repro" in terminal. In end, push updates on github
 
 11. create a report directory in main directory and create 2 json files with name storing params.json & score.json files.
+
+12. before running check all code in train_and_evaluate.py, dvc.yaml & in params.yaml. If all good. run "dvc repro" means to reproduce. If all runs good. Push to GIT.
+
+13. run "dvc metrics show" in terminal. This will show the current params & scores for model.
+
+14. run "dvc metrics diff" in terminal. This will show the difference b\w the old & new params & scores.
+
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---| After this we are going for Testing Part |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+
+

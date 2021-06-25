@@ -16,4 +16,7 @@ dvc
 dvc[gdrive]
 sklearn
 pandas
+numpy
+tox
+pytest
 pyyaml~=5.4.1
