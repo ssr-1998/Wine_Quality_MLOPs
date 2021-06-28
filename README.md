@@ -55,3 +55,28 @@ git remote add origin  https://github.com/ssr-1998/Wine_Quality_MLOPs.git
 ```bash
 git push origin main
 ```
+
+tox command -
+```bash
+tox
+```
+
+For Rebuilding -
+```bash
+tox -r
+```
+
+pytest command -
+```bash
+pytest -v
+```
+
+setup command -
+```bash
+pip install -e .
+```
+
+Build your Own Package Commands -
+```bash
+python setup.py sdist bdist_wheel
+```
