@@ -3,7 +3,6 @@
 # Process
 # return Dataframe
 
-import os
 import pandas as pd
 import yaml
 import argparse

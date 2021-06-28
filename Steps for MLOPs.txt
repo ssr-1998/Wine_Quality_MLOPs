@@ -5,6 +5,7 @@
 3. create requirements.txt & install it. {dvc, dvc[gdrive], sklearn} modules should be there.
 
 4. create a template.py file using "python > template.py" in terminal. Use template.py file to make necessary files & directories in main directory.
+Also make a directory named "data_given" in root directory & put the dataset over there.
 
 5. run following from terminal:
 	5.1. git init
@@ -40,4 +41,35 @@ Mention this split_data.py as a stage in dvc.yaml file & run "dvc repro" in term
 
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---| After this we are going for Testing Part |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 
+1. As using pytest & tox so will install them & add them in requirements.txt
 
+2. make a file named "tox.ini" in main directory & mention the requriments & commands which we want for virtual environment which will be created by tox for testing.
+Remember to use "tox.ini" file in .ini form & not to use it as a text file. As tox create a temporary virtual environment for us for testing only.
+
+3.  make a directory named "tests" which will have all test casses & create 3 python files named "conftest.py", "test_config.py" & "__init__.py".
+
+4.  In "test_config.py" whatever function we are going to make for testing purpose the name of function should start with "test".
+--------------------------------------------------------------------------------------------------------------------------------
+Note: assert is a function in python which is used in testing. It will print passed or failed for the given condition. For eg.
+Suppose this is done in test_config.py:
+	def test_generic():
+		a = 4
+		b = 4
+		assert a==b
+If the condition is true the assert function in test_generc function will print Passed. Else Failed.
+--------------------------------------------------------------------------------------------------------------------------------
+
+5. pytest -v (command for running test casses {Like test cases in conftest.py & etc..})
+
+6. "tox" (command to run tox.ini file. When running 1st time it will install all requirements from requirements.txt, will create a virtual env & will run conftest.py
+as well. From 2nd time it won't again install requirements or create any virtual env but will directly run test_config.py & other which we will specify in commands.)
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Note:
+	tox -r (If we made any changes in our requirements.txt file then to have those changes installed in tox env as well this command is used.)
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+7. Now in root directory make a file named "steup.py". We make this file to make a python file or function a python package. Which can be used in other projects too.
+A package which can be pip installed & which could be imported anywhere on system. When we will do coding in this file then first we need to run "python install -e ."
+in terminal for python to make "src" directory a package. Now, from "tox.ini" file we can remove "skipsdist=True".
+
+8. 
