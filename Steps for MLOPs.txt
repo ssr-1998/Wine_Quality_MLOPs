@@ -72,4 +72,14 @@ Note:
 A package which can be pip installed & which could be imported anywhere on system. When we will do coding in this file then first we need to run "python install -e ."
 in terminal for python to make "src" directory a package. Now, from "tox.ini" file we can remove "skipsdist=True".
 
-8. 
+8. Update all on Github.
+
+9.{Only for this Project} Now, run "pip install jupyterlab" in env & run "jupyter-lab notebooks\".
+Here make a ipynb file, there can experiment whatever we want. Like any kind of Analysis or anything.
+
+10. In ipynb file. We made a custom error for our project. Which will raise error if User tries to submit any input beyond range specified for each input & made a
+"schema_in.json" file storing all features minimum & maximum values.
+
+11. Now, put that Custom Error in "test_config.py" & modify file according to need. If error is running good then will commit changes to Git.
+
+
