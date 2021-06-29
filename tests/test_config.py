@@ -12,3 +12,9 @@ def test_generic():
     with pytest.raises(NotInRangeError):
         if a not in range(10, 20):
             raise NotInRangeError
+
+
+def test_random():
+    a = 4
+    b = 4
+    assert a == b
