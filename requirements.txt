@@ -10,3 +10,4 @@ numpy
 tox
 pytest
 flake8
+joblib

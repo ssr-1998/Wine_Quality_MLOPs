@@ -82,4 +82,7 @@ Here make a ipynb file, there can experiment whatever we want. Like any kind of 
 
 11. Now, put that Custom Error in "test_config.py" & modify file according to need. If error is running good then will commit changes to Git.
 
+12. Let's use "flake8" now. It is useful to show normal warnings which are there in Python files. Put "flake8" in "requirements.txt" & write code of "flake8" in 
+"tox.ini" in "commands".
 
+13. 

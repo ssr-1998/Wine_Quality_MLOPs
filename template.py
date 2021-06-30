@@ -11,7 +11,8 @@ dirs = [
 ]
 
 for dir_ in dirs:
-    os.makedirs(dir_, exist_ok=True)  # exist_ok is set to True so that if directory is already there, it won't throw any error.
+    # exist_ok is set to True so that if directory is already there, it won't throw any error.
+    os.makedirs(dir_, exist_ok=True)
     with open(os.path.join(dir_, ".gitkeep"), "w") as f:
         pass
 
@@ -42,4 +43,3 @@ for file_ in files:
 #     packages=find_packages(),
 #     license="MIT"
 # )
-
