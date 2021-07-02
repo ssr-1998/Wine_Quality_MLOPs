@@ -120,6 +120,6 @@ function "index" & for testing the the Webapp by API, code for that too in same 
 There is one thing called Github Actions in Github. Which will connect to Heroku & whenever we will be updating anything on Github Repo, Github will automatically
 test & deploy for us on Heroku.
 
-1. We need to make some directories for this. So, lets make them "mkdir .github\workflows\". Now, inside this create a yaml file "ci-cd.yaml".
+1. We need to make some directories for this. So, lets make them "mkdir .github\workflows\". Now, inside this create a yaml file "ci-cd.yaml" & code it.
 
 2. 
