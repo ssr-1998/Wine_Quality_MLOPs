@@ -122,4 +122,14 @@ test & deploy for us on Heroku.
 
 1. We need to make some directories for this. So, lets make them "mkdir .github\workflows\". Now, inside this create a yaml file "ci-cd.yaml" & code it.
 
-2. 
+2. In "ci-cd.yaml" file, we will mention the jobs which the github needs to do for this project before deploying it on Heroku. Mention installing the "requirements.txt"
+, use of "flake8", testing with "pytest -v". All to be mentioned.
+
+3. Push these changes to Github & check the Actions in Github for build. If the build is complete then go on Heroku & create an App. Get the Authorization Token &
+App Name from Heroku. Save them in GitHub Repo's Secrets & then mention Deployment on Heroku job in "ci-cd.yaml" file.
+
+4. Create a "Procfile" in plain text format & mention the code for telling the Heroku about which Server we are going to use for this App.
+
+5. Now, again push all changes to GitHub & check the Actions Sections whether it is showing any error or not. If not then we will be able to deploy the app on Heroku.
+
+6. 
