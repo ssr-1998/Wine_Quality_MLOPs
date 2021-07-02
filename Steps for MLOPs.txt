@@ -83,6 +83,37 @@ Here make a ipynb file, there can experiment whatever we want. Like any kind of 
 11. Now, put that Custom Error in "test_config.py" & modify file according to need. If error is running good then will commit changes to Git.
 
 12. Let's use "flake8" now. It is useful to show normal warnings which are there in Python files. Put "flake8" in "requirements.txt" & write code of "flake8" in 
-"tox.ini" in "commands".
+"tox.ini" in "commands". After this run "tox" command & solve all the warnings which were shown in "tox" command.
 
-13. 
+13. Now, we will head towards building the app. For this, first we need to make some directories & files. Here is the list of Directories & files:
+	webapp {Directory}
+	webapp\static {Directory}
+	webapp\static\css {Directory}
+	webapp\static\script {Directory}
+	webapp\templates {Directory} (In this all HTML pages will go)
+	prediction_service {Directory}
+	prediction_service\model {Directory}
+	app.py (This will be used for creating the flask app)
+	prediction_service\__init__.py
+	prediction_service\prediction.py
+	webapp\static\css\main.css (For webpage the Background color is mentioned over there)
+	webapp\static\script\index.js (This is just an optional file. Not Required. But made just so the directory doesn't look empty)
+	webapp\templates\404.html (In case the system gives any kind of error. This page will be used to show the error.)
+	webapp\templates\base.html (Make)
+	webapp\templates\index.html
+After making all these Directories & Files. We can push this structure on Github as well.
+
+14. Now, we will start coding for web page. Create a basic webpage in "base.html" so that it can be used for extending that file to other webpages.
+Write code in "index.html" for "Home Page/Prediction Page" by extending "base.html". Also write code for mentioning the css formats in "main.css" file.
+Write code in "404.html" for displaying errors.
+
+15. Now, it's time to code for "app.py". First create a basic "index function" & run the webapp. Check it. If everything works good then complete the code for 
+function "index" & for testing the the Webapp by API, code for that too in same function.
+
+16. Now its time to complete code for "app.py". Create function "predict" & "api_response" in app.py.
+
+17. If model is ready for training then use it otherwise as for just testing use "model.joblib". Copy "model.joblib" from "saved_models" directory to 
+"prediction_service\model" path. Now, run the app & use Postman app for testing the model.
+
+18. 
+

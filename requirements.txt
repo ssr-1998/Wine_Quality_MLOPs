@@ -11,3 +11,5 @@ tox
 pytest
 flake8
 joblib
+flask
+gunicorn
